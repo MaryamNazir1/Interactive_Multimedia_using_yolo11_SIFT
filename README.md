@@ -106,4 +106,4 @@ https://github.com/MaryamNazir1/Interactive_Multimedia_using_yolo11_SIFT/blob/ma
     3. Click on an object (bag, dress, shoe) in the frame.
     4. YOLO detects the object and crops the region.
     5. SIFT compares the cropped image with database images.
-    6.The best match is displayed with product name, price, and images.
+    6. The best match is displayed with product name, price, and images.

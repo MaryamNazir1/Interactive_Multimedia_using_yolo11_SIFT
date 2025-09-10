@@ -1,4 +1,4 @@
-# 🖼️ Interactive Multimedia using YOLOv11 + SIFT
+# Interactive Multimedia using YOLOv11 + SIFT
 
 This project demonstrates an **interactive multimedia system** that allows users to click on objects (bags, dresses, and shoes) in a video to retrieve **product details** such as name, price, and related images from a **MongoDB database**.
 
@@ -6,7 +6,7 @@ It combines **YOLOv11 (for object detection)** and **SIFT (for image similarity 
 
 ---
 
-## 🚀 Features
+## Features
 
 - Train a YOLOv11 model on a custom dataset of **bags, dresses, and shoes**.
 - Detect these objects in video frames in real time.
@@ -19,7 +19,11 @@ It combines **YOLOv11 (for object detection)** and **SIFT (for image similarity 
 
 ---
 
-## 🛠️ Tech Stack
+## Demo
+
+## <img src="src/demo_gif.gif" alt="Intractive multimedia" width="600" height="350">
+
+## Tech Stack
 
 - **Python 3.9+**
 - **YOLOv11 (Ultralytics)** – Object detection
@@ -29,17 +33,17 @@ It combines **YOLOv11 (for object detection)** and **SIFT (for image similarity 
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
-Interactive_Multimedia_using_yolo11_SIFT/
-│── db/ # Product images (bags, dresses, shoes)
-│── src/ # Source code files
-│── best.pt # Trained YOLOv11 model weights
-│── app.py # Main Streamlit application
-│── requirements.txt # Python dependencies
-│── README.md # Documentation
+    Interactive_Multimedia_using_yolo11_SIFT/
+    ─ db/ # Product images (bags, dresses, shoes)
+    ─ src/ # Source code files
+    ─ best.pt # Trained YOLOv11 model weights
+    ─ app.py # Main Streamlit application
+    ─ requirements.txt # Python dependencies
+    ─ README.md # Documentation
 
-## ⚙️ Installation
+## Installation
 
 1. Clone the repository:
    ```bash
@@ -48,45 +52,45 @@ Interactive_Multimedia_using_yolo11_SIFT/
    ```
 2. Create and activate a virtual environment:
 
-```bash
-python -m venv venv
-source venv/bin/activate   # For Linux/Mac
-venv\Scripts\activate      # For Windows
-```
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # For Linux/Mac
+   venv\Scripts\activate      # For Windows
+   ```
 
 3. Install dependencies:
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 4. Place your trained YOLO model (best.pt) inside the project root.
 
 5. Add product images to the db/ folder and make sure MongoDB is populated with product metadata:
 
-```bash
-{
-  "Dresses": [
-    {
-      "name": "Red Dress",
-      "price": "$50",
-      "images": ["d1_1.jpg", "d1_2.jpg", "d1_3.jpg"]
-    }
-  ],
-  "Shoes": [
-    {
-      "name": "Nike Sneakers",
-      "price": "$80",
-      "images": ["s1_1.jpg", "s1_2.jpg"]
-    }
-  ]
-}
-```
+   ```bash
+   {
+   "Dresses": [
+       {
+       "name": "Red Dress",
+       "price": "$50",
+       "images": ["d1_1.jpg", "d1_2.jpg", "d1_3.jpg"]
+       }
+   ],
+   "Shoes": [
+       {
+       "name": "Nike Sneakers",
+       "price": "$80",
+       "images": ["s1_1.jpg", "s1_2.jpg"]
+       }
+   ]
+   }
+   ```
 
 6. Running the App
 
-```bash
+   ```bash
 
-streamlit run app.py
+   streamlit run app.py
 
-```
+   ```

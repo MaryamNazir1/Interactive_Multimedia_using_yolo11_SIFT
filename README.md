@@ -21,7 +21,11 @@ It combines **YOLOv11 (for object detection)** and **SIFT (for image similarity 
 
 ## Demo
 
-## <img src="src/demo_gif.gif" alt="Intractive multimedia" width="600" height="350">
+<img src="src/demo_gif.gif" alt="Intractive multimedia" width="600" height="350">
+
+### clear demo video
+
+https://github.com/MaryamNazir1/Interactive_Multimedia_using_yolo11_SIFT/blob/main/src/demo_video.mp4
 
 ## Tech Stack
 
@@ -36,12 +40,12 @@ It combines **YOLOv11 (for object detection)** and **SIFT (for image similarity 
 ## Project Structure
 
     Interactive_Multimedia_using_yolo11_SIFT/
-    ─ db/ # Product images (bags, dresses, shoes)
-    ─ src/ # Source code files
-    ─ best.pt # Trained YOLOv11 model weights
-    ─ app.py # Main Streamlit application
-    ─ requirements.txt # Python dependencies
-    ─ README.md # Documentation
+    │── db/ # Product images (bags, dresses, shoes)
+    │── src/ # Source code files
+    │── best.pt # Trained YOLOv11 model weights
+    │── app.py # Main Streamlit application
+    │── requirements.txt # Python dependencies
+    │── README.md # Documentation
 
 ## Installation
 
@@ -94,3 +98,12 @@ It combines **YOLOv11 (for object detection)** and **SIFT (for image similarity 
    streamlit run app.py
 
    ```
+
+## Demo Workflow
+
+    1. Upload a video (.mp4, .avi, .mov) from the sidebar.
+    2. The system extracts frames and displays them.
+    3. Click on an object (bag, dress, shoe) in the frame.
+    4. YOLO detects the object and crops the region.
+    5. SIFT compares the cropped image with database images.
+    6.The best match is displayed with product name, price, and images.

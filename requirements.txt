@@ -1,6 +1,6 @@
-torch
-torchvision
-pillow
-numpy
-pymongo
-streamlit
+streamlit==1.36.0
+opencv-python==4.10.0.84
+numpy==1.26.4
+pymongo==4.6.3
+ultralytics==8.2.40
+streamlit-image-coordinates==0.1.6
